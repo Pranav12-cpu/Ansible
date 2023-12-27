@@ -1,0 +1,14 @@
+---
+- name: Perform Tasks
+  hosts: localhost
+
+  tasks:
+    - name: Create Registration_Number.txt
+      ansible.builtin.file:
+        path: "/tmp/73772114177.txt"
+        state: touch
+
+    - name: Create Registration_Number
+      ansible.builtin.file:
+        path: "/tmp/73772114177"
+        state: touch
